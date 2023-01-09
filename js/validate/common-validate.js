@@ -2,7 +2,7 @@ const memberValidation = {
     memberId : {
         presence : true,
         //영문으로 시작하고 영 숫자 허용 5자리 이상 20자리 이하-
-        format : { pattern: "(?=[a-zA-Z])[a-zA-Z0-9]{5,20}" }
+        format : { pattern: "(?=[\d]*[a-zA-Z])[a-zA-Z0-9]{5,20}" }
     },
     memberPassword : {
         presence : true,
