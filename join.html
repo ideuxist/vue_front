@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <script type="text/javascript" src="js/validate/validate.js"></script>
+    <title>회원가입</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main>
+            <div class="row">
+                <div class="card card-member-join col-6 mt-5">
+                    <div class="card-header">
+                        <h3 class="text-center my-4">회원가입</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="memberJoinForm" class="mt-5" autocomplete="off">
+                            <fieldset>
+                                <div class="row mb-3">
+                                    <label class="col-2 col-form-label">아이디</label>
+                                    <div class="col-6">
+                                        <input type="text" class="check-validation form-control" name="memberId"
+                                            placeholder="영문자 1자리 이상 포함하는 영문 혹은 숫자">
+                                        <div class="invalid-feedback">
+                                            아이디는 영문자 1자리 이상포함하는 5~20자리 영문 혹은 숫자로 입력해 주세요
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-secondary col-2 duplicate-check-btn">중복 확인</button>
+                                    <span class="col-2 col-form-label">사용가능</span>
+                                </div>
+                                <div class="row mb-3">
+                                    <label class="col-2 col-form-label">비밀번호</label>
+                                    <div class="col-6">
+                                        <input type="password" class="check-validation form-control" name="memberPassword">
+                                        <div class="invalid-feedback">
+                                            비밀번호는 영문, 숫자, 특수문자를 포함하는 8~20자리를 포함해야 합니다
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label class="col-2 col-form-label">비밀번호 확인</label>
+                                    <div class="col-6">
+                                        <input type="password" class="check-validation form-control" name="memberPasswordCheck">
+                                        <div class="invalid-feedback">
+                                            비밀번호를 정확히 입력하여 주세요
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label class="col-2 col-form-label" name="memberName">이름</label>
+                                    <div class="col-6">
+                                        <input type="text" class="check-validation form-control">
+                                        <div class="invalid-feedback">
+                                            이름을 정확히 입력해 주세요
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label class="col-2 col-form-label" name="memberNickname">닉네임</label>
+                                    <div class="col-6">
+                                        <input type="text" class="check-validation form-control">
+                                        <div class="invalid-feedback">
+                                            닉네임을 입력해 주세요
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-secondary col-2 duplicate-check-btn">중복 확인</button>
+                                    <span class="col-2 col-form-label">사용가능</span>
+                                </div>
+                                <div class="row mb-3">
+                                    <label class="col-2 col-form-label" name="memberPhone">전화번호</label>
+                                    <div class="col-6">
+                                        <input type="text" class="check-validation form-control">
+                                        <div class="invalid-feedback">
+                                            전화번호를 확인해 주세요
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-5">
+                                    <label class="col-2 col-form-label" name="memberEmail">이메일</label>
+                                    <div class="col-6">
+                                        <input type="text" class="check-validation form-control">
+                                        <div class="invalid-feedback">
+                                            이메일을 확인해 주세요
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 justify-content-center">
+                                    <a href="login.html" class="btn btn-secondary col-2 mx-3" >돌아가기</a>
+                                    <input type="submit" class="btn btn-secondary col-2 mx-3" value="가입하기">
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script type="text/javascript" src="js/validate/common-validate.js"></script>
+</body>
+
+</html>
