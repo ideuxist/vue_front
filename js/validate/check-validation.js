@@ -6,12 +6,28 @@ const memberValidation = {
     },
     memberPassword : {
         presence : true,
-        format : { pattern:"(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[^a-zA-Z0-9]).{8,20}$" }
+        format : { pattern: "(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[^a-zA-Z0-9]).{8,20}$" }
     },
     memberPasswordCheck : {
         presence : true,
         equality : "memberPassword"
     },
+    memberName : {
+        presence : true,
+        format : { pattern : "^[기-힣]{2,8}" },
+    },
+    memberNickname : {
+        presence : true,
+        format : {pattern : "[기-힣a-zA-Z0-9]{1,20}" },
+    },
+    memberPhone : {
+      presence : true,
+      format : { pattern : "^((010-[0-9]{4})|((01[16789]{1}|02|0[3-9]{1}[0-9]{1})-[0-9]{3,4}))-[0-9]{4}$" }
+    },
+    memberEmail : {
+        presence : true,
+        format : { pattern : "^[a-zA-Z0-9]([-_\.]?[a-zA-Z0-9])*@[a-zA-Z0-9]([-_\.]?[a-zA-Z0-9])*\.[a-zA-Z0-9]{2,3}$" }
+    }
 
 }
 
