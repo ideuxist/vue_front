@@ -42,12 +42,11 @@ function removeIsInvalidInClass() {
 function addIsInvalidInClass(result) {
 
     if (result) {
-        console.log(result);
+
         for (const name in result) {
-            console.log(typeof name);
-            console.log(name);
             document.querySelector(`input[name=${name}]`).classList.add('is-invalid');
         }
+
     }
 
 }
@@ -56,6 +55,11 @@ document.getElementById('memberJoinForm').addEventListener('submit',function(eve
     event.preventDefault();
     removeIsInvalidInClass();
     const result = validate(this,memberValidation);
-    addIsInvalidInClass(result);
+
+    if(result) {
+        addIsInvalidInClass(result);
+    }else {
+        this.submit();
+    }
 });
 
