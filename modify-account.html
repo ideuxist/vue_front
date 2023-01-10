@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원정보 수정</title>
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <script type="text/javascript" src="/js/fontawesome/fontawesome.js"></script>
+    <script type="text/javascript" src="/js/fontawesome/solid.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header-menu">
+            <a href="/board-list.html">게시판</a>
+        </div>
+        <div class="dropdown login-user-menus">
+            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-user"></i>
+                <span>kkw1691님</span>
+            </button>
+            <ul class="dropdown-menu login-user-">
+                <li class="dropdown-item"><i class="fa-solid fa-circle-info"></i><a href="/mypage.html">마이 페이지</a>
+                </li>
+                <li class="dropdown-item"><i class="fa-solid fa-pen-to-square"></i><a href="/modify-account.html">회원정보 수정</a></li>
+                <li class="dropdown-item"><i class="fa-solid fa-key"></i><a href="change-password.html">비밀번호 변경</a></li>
+                <li class="dropdown-item"><i class="fa-solid fa-right-from-bracket"></i><a href="/login.html">로그아웃</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="content-box">
+            <h1 class="content-title mx-5 my-3">회원정보 수정</h1>
+            <div class="content-section">
+                <form>
+                    <div class="mb-3 row">
+                        <label for="memberPw" class="col-2 col-form-label">비밀번호</label>
+                        <div class="col-4">
+                            <input type="password" id="memberPw" class="form-control">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="nickName" class="col-2 col-form-label">닉네임</label>
+                        <div class="col-4">
+                            <input type="text" id="nickName" class="form-control">
+                        </div>
+                        <button class="btn btn-secondary col-1 duplicate-check-btn">중복 확인</button>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="phoneNumber" class="col-2 col-form-label">전화번호</label>
+                        <div class="col-4">
+                            <input type="text" id="phoneNumber" class="form-control">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="email" class="col-2 col-form-label">이메일</label>
+                        <div class="col-4">
+                            <input type="text" id="email" class="form-control">
+                        </div>
+                        <button class="btn btn-secondary col-1 duplicate-check-btn">중복 확인</button>
+                    </div>
+                </form>
+            </div>
+            <a href="#" class="btn btn-secondary float-end col-1 mx-5">수정</a>
+            <a href="#" class="btn btn-secondary float-end col-1">취소</a>
+        </div>
+    </main>
+</div>
+<script type="text/javascript" src="/js/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
