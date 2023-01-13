@@ -39,5 +39,5 @@
 * { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 body {font-family:'Noto Sans KR','Nanum Gothic','돋움', dotum, sans-serif !important; line-height: 1.5em; color:#000; font-size:15px; font-weight:300; letter-spacing:-0.05em;}
 select, input, textarea, button{ font-family:'Noto Sans KR','Nanum Gothic',"돋움", dotum, sans-serif; font-size:inherit; vertical-align:middle;}
-ul, ol{list-style: none}
+ul, ol{list-style: none;margin:0;padding:0;}
 a {color: #000; text-decoration: none;}

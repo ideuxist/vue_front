@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>게시글 보기</title>
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <script type="text/javascript" src="/js/fontawesome/fontawesome.js"></script>
+    <script type="text/javascript" src="/js/fontawesome/solid.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header-menu">
+            <a href="/board-list.html">게시판</a>
+        </div>
+        <div class="dropdown login-user-menus">
+            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-user"></i>
+                <span>kkw1691님</span>
+            </button>
+            <ul class="dropdown-menu login-user-">
+                <li class="dropdown-item"><i class="fa-solid fa-circle-info"></i><a href="/mypage.html">마이 페이지</a>
+                </li>
+                <li class="dropdown-item"><i class="fa-solid fa-pen-to-square"></i><a href="/modify-account.html">회원정보
+                    수정</a></li>
+                <li class="dropdown-item"><i class="fa-solid fa-key"></i><a href="/change-password.html">비밀번호 변경</a>
+                </li>
+                <li class="dropdown-item"><i class="fa-solid fa-right-from-bracket"></i><a href="/login.html">로그아웃</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="content-box">
+            <h1 class="content-title mx-5 my-3">게시글 보기</h1>
+            <div class="content-section">
+                <div class="article-header row mb-3">
+                    <h3 class="col-7 article-header-title">[단독] 100만 원이면 비판기사를 네이버에서 숨길 수 있다 </h3>
+                    <p class="col-2 article-header-info text-center"><i class="fa-solid fa-user-tie"></i>신입사원</p>
+                    <p class="col-2 article-header-info text-center"><i class="fa-solid fa-clock"></i>2023-01-02 17:54
+                    </p>
+                    <p class="col-1 article-header-info text-center"><i class="fa-solid fa-eye"></i>87</p>
+                </div>
+                <div class="article-content row mb-3">
+                    <p>
+                        A업체 관계자는 “네이버 검색 결과에 기사가 다섯 개씩 뜨는데 이걸 밀어내려면 최소 기사 다섯 개가 있어야 한다. 급하시면 예전에 썼던 보도자료를 주시면 우리가 그걸 지금
+                        시점으로 내용을 손 봐서 부정기사를 밀어낼 수 있다”면서 “기사 건당 20만 원씩 받고 가격은 조율 가능하다”고 말했다.
+                        이 관계자는 “야간이나 주말도 가능하다. 언제나 기사를 보낼 수 있는 언론사 10곳 정도와 계약이 돼 있다”면서 “야간이나 주말에는 기사 건당 30만 원씩 받는다”고
+                        말했다.
+                        A업체는 네이버 클러스터링에 대한 밀어내기도 가능하다는 입장이다. 클러스터링은 포털이 뉴스 검색 결과에 유사한 기사를 ‘묶음’ 형태로 제공하는 것을 말한다. 기사 검색
+                        결과가 단순히 최신순으로 정렬되는 게 아니라 유사한 내용이 담긴 기사는 클러스터링으로 묶어 제공하고 있어 밀어내기가 힘들다는게 그동안 네이버가 해온 주장이었다.
+                        그러나 A업체 관계자는 “클러스터링은 90%정도 밀어낼 수 있다”면서 “부정기사가 클러스터링으로 묶여 있으면 클러스터링으로 밀어내야 한다”고 말했다.<br>
+                        즉, 네이버에서 특정 기업에 대한 부정적인 기사들이 묶여 클러스터링이 형성돼 있는 상황이면 긍정적인 소식A와 B를 각각 2~5건씩 언론사에 배포해 기사를 만든다. 그러면
+                        긍정적인 클러스터링 A와 B가 상단에 노출되고 비판적인 기사묶음은 클러스터링 C는 검색 결과에서 밀린다.
+                        클러스터링 밀어내기는 5~10개의 클러스터링 기사세트(기사 최소 10~20개)를 포털에 내보내야 한다. A업체 단가표에 따르면 클러스터링 단가는 최소 250만 원이다.
+                        클러스터링군이 많을 수록 기사가 밀릴 확률이 높기 때문에 더 많은 금액을 투자할수록 부정기사가 밀려날 가능성이 높다.
+                        홍보성 기사 클러스터링이 밀어내려던 기사 아래로 갈 수 있지 않을까. A업체는 클러스터링 밀어내기 노하우로 “싼 매체 말고 조선일보 같은 좋은 매체가 하나씩 있어야
+                        클러스터링이 위로 올라간다. 또 같은 내용의 기사라도 다음날에 새로 올리면 같이 묶이지 않는다”고 말했다.
+                        출처 : 미디어오늘(http://www.mediatoday.co.kr)
+                    </p>
+                </div>
+                <div class="article-attached-file row mb-3">
+                    <p class="col-2">첨부파일</p>
+                    <ul class="col-6">
+                        <li class="mb-3">board.war<a href="#" class="btn btn-secondary">다운로드</a></li>
+                        <li class="mb-3">board.jar<a href="#" class="btn btn-secondary">다운로드</a></li>
+                    </ul>
+                </div>
+                <div class="article-btn row mb-3">
+                    <a href="#" class="btn btn-secondary col-1">삭제</a>
+                    <a href="#" class="btn btn-secondary col-1">수정</a>
+                    <a href="#" class="btn btn-secondary col-1">목록</a>
+                </div>
+                <div class="article-reply-write row">
+                    <label class="col-1">댓글 작성</label>
+                    <div class="col-8">
+                        <textarea class="form-control" rows="3">댓글을 입력하세요</textarea>
+                    </div>
+                    <button class="btn btn-secondary col-1">입력</button>
+                </div>
+                <ul class="article-reply-list">
+                    <li class="article-reply row">
+                        <p class="col-2"><i class="fa-solid fa-user-tie"></i>지나가는사람</p>
+                        <p class="col-2"><i class="fa-solid fa-clock"></i>2023-01-02 17:54</p>
+                        <p class="col-6">댓글 내용입니다 댓글 내용입니다 댓글 내용입니다 댓글 내용입니다 댓글 내용입니다</p>
+                    </li>
+                    <li class="article-reply row">
+                        <p class="col-2"><i class="fa-solid fa-user-tie"></i>닉네임</p>
+                        <p class="col-2"><i class="fa-solid fa-clock"></i>2023-01-02 17:54</p>
+                        <p class="col-7">댓글 내용입니다 댓글 내용입니다 댓글 내용입니다 댓글 내용입니다 댓글 내용입니다</p>
+                    </li>
+                    <li class="article-reply row">
+                        <p class="col-2"><i class="fa-solid fa-user-tie"></i>별명</p>
+                        <p class="col-2"><i class="fa-solid fa-clock"></i>2023-01-02 17:54</p>
+                        <p class="col-6">댓글 내용입니다 댓글 내용입니다 댓글 내용입니다 댓글 내용입니다 댓글 내용입니다</p>
+                    </li>
+                    <li class="article-reply row">
+                        <p class="col-2"><i class="fa-solid fa-user-tie"></i>신입사원</p>
+                        <p class="col-2"><i class="fa-solid fa-clock"></i>2023-01-02 17:54</p>
+                        <div class="col-8">
+                            <div class="row">
+                                <p class="col-8">댓글 내용입니다 댓글 내용입니다 댓글 내용입니다 댓글 내용입니다 댓글 내용입니다</p>
+                                <button type="button" class="btn btn-secondary col-1">삭제</button>
+                                <button type="button" class="btn btn-secondary col-1">수정</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="article-reply row">
+                        <p class="col-2"><i class="fa-solid fa-user-tie"></i>닉네임</p>
+                        <p class="col-2"><i class="fa-solid fa-clock"></i>2023-01-02 17:54</p>
+                        <p class="col-6">댓글 내용입니다 댓글 내용입니다 댓글 내용입니다 댓글 내용입니다 댓글 내용입니다</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <div class="reply-modify-inactive">
+        <div class="row article-reply-modify">
+            <div class="col-8">
+                <textarea class="form-control tt" rows="3"></textarea>
+            </div>
+            <button type="button" class="article-reply-modify btn btn-secondary col-1">입력</button>
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript" src="js/layout.js"></script>
+<script>
+    document.querySelector('.article-reply-list').addEventListener('click',function(event){
+
+        //클릭된 요소가 수정 버튼이면
+        if(event.target.textContent ==='수정'){
+            //1.댓글 내용 변수에 저장
+            const modifyBtn = event.target;
+            const replyContent = modifyBtn.previousElementSibling.previousElementSibling.textContent;
+            //2.댓글 내용 숨기고
+            modifyBtn.parentElement.classList.add('reply-content-inactive');
+            //3.해당 영역에 댓글 수정 ui 노출(기존 숨겨져 있는 dom요소 복제해서 이동)
+            const articleReplyModify = document.querySelector('.reply-modify-inactive').firstElementChild.cloneNode(true);
+            modifyBtn.parentElement.parentElement.appendChild(articleReplyModify);
+            //4.댓글 내용 수정 가능하게 기존 내용을 textarea에 나타낸다
+            articleReplyModify.firstElementChild.firstElementChild.textContent=replyContent;
+
+        }
+
+        //클릭된 요소가 입력 버튼이면(댓글 수정시)
+        if(event.target.textContent ==='입력') {
+            //1.댓글내용 저장
+            const insertBtn = event.target;
+            const oldReplyContent = insertBtn.previousElementSibling.firstElementChild.textContent;
+            const newReplyContent = insertBtn.previousElementSibling.firstElementChild.value;
+
+            //2.비동기 댓글 수정요청
+
+            //3.결과값 받아서
+
+            //4.성공시 바뀐 댓글 수정 ui 없애고 수정된 댓글내용으로 댓글 리스트 ui 출력
+            insertBtn.parentElement.previousElementSibling.firstElementChild.textContent=newReplyContent;
+            insertBtn.parentElement.previousElementSibling.classList.remove('reply-content-inactive');
+            insertBtn.parentElement.remove();
+
+            //5.실패시 실패 메시지 띄우고 댓글 수정 ui 없애고 기존댓글 리스트 ui로 돌아가기
+            // insertBtn.parentElement.previousElementSibling.firstElementChild.textContent=oldReplyContent;
+            // insertBtn.parentElement.previousElementSibling.classList.remove('reply-content-inactive');
+            // insertBtn.parentElement.remove();
+        }
+
+        //클릭된 요소가 삭제 버튼일시
+        if(event.target.textContent==='삭제') {
+
+            const deleteBtn = event.target;
+            //비동기 삭제 요청
+
+            //성공시 댓글 삭제
+            deleteBtn.closest('.article-reply').remove();
+            //실패시 메시지 띄우고 아무것도 하지 않는다
+            return;
+        }
+    })
+</script>
+</body>
+</html>

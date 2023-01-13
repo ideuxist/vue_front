@@ -40,11 +40,11 @@
 }
 
 .header .login-user-menus {
-    width:200px;
+    width: 200px;
     font-size: 1.5rem;
 }
 
-.header .login-user-menus li:not(:last-child){
+.header .login-user-menus li:not(:last-child) {
     border-bottom: 1px solid #e9ecef;
 }
 
@@ -54,11 +54,11 @@
 .content-box {
     width: 1440px;
     margin: 1rem auto;
-    font-size:1rem;
+    font-size: 1rem;
 }
 
 .content-box .content-title {
-    font-size:2rem;
+    font-size: 2rem;
 }
 
 .content-box .content-section {
@@ -70,5 +70,102 @@
 
 .leave-info .leave-info-warning {
     font-weight: 700;
-    color:#6a1a21;
+    color: #6a1a21;
+}
+
+.board-list-table {
+    table-layout: fixed;
+    font-size: 1.5rem;
+}
+
+.board-list-table thead {
+    background-color: #021e43;
+    color: #ffffff;
+}
+
+.board-list-table td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 15px;
+}
+
+.board-list-paging .pagination {
+    justify-content: center;
+    clear: both;
+}
+
+.board-list-paging .pagination li a{
+    color :#021e43;
+}
+
+.board-list-search {
+    justify-content: center;
+}
+
+.attached-file {
+
+}
+
+.attached-file .attached-file-list {
+    padding:7px 10px;
+    font-size: 1rem;
+}
+
+.attached-file .attached-file-list a {
+    margin-right: 2rem;
+
+}
+.attached-file .attached-file-list .attached-file-remove {
+    cursor: pointer;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+.content-section .article-header {
+    border-bottom: 3px solid #021e43;
+    padding:10px;
+}
+.content-section .article-header-info {
+    font-size: 1.25rem;
+}
+
+.content-section .article-content {
+    font-size:1rem;
+    line-height: 2rem;
+    border-bottom: 3px solid #021e43;
+}
+.content-section .article-attached-file {
+    font-size: 1rem;
+    border-bottom: 3px solid #021e43;
+    align-items: center;
+}
+.content-section .article-attached-file a {
+    margin-left: 1.5rem;
+}
+.content-section .article-btn {
+    justify-content: end;
+    padding:20px;
+    border-bottom: 1px solid #021e43;
+}
+.content-section .article-btn a {
+    margin-left: 1rem;
+}
+.content-section .article-reply-write {
+    border-bottom: 1px solid #021e43;
+    padding: 20px 0 40px;
+}
+
+.content-section .article-reply {
+    border-bottom:1px solid #021e43;
+    padding:10px;
+}
+.content-section .article-reply-list button {
+    margin-left: 2rem;
+}
+.content-section .article-reply .reply-content-inactive {
+    display: none;
+}
+.reply-modify-inactive {
+    display: none;
 }

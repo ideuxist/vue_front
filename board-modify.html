@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>게시글 수정</title>
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <script type="text/javascript" src="/js/fontawesome/fontawesome.js"></script>
+    <script type="text/javascript" src="/js/fontawesome/solid.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header-menu">
+            <a href="/board-list.html">게시판</a>
+        </div>
+        <div class="dropdown login-user-menus">
+            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-user"></i>
+                <span>kkw1691님</span>
+            </button>
+            <ul class="dropdown-menu login-user-">
+                <li class="dropdown-item"><i class="fa-solid fa-circle-info"></i><a href="/mypage.html">마이 페이지</a>
+                </li>
+                <li class="dropdown-item"><i class="fa-solid fa-pen-to-square"></i><a href="/modify-account.html">회원정보 수정</a></li>
+                <li class="dropdown-item"><i class="fa-solid fa-key"></i><a href="/change-password.html">비밀번호 변경</a></li>
+                <li class="dropdown-item"><i class="fa-solid fa-right-from-bracket"></i><a href="/login.html">로그아웃</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="content-box">
+            <h1 class="content-title mx-5 my-3">게시글 수정</h1>
+            <div class="content-section">
+                <form class="board-write-form">
+                    <div class="row mb-3">
+                        <label for="boardTitle" class="col-form-label col-1">제목</label>
+                        <div class="col-8">
+                            <input type="text" id="boardTitle" name="boardTitle" class="form-control col-10">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="boardContent" class="col-form-label col-1">내용</label>
+                        <div class="col-8">
+                            <textarea type="text" id="boardContent" name="boardContent" class="form-control" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="boardAttachFile" class="col-1 col-form-label">첨부파일</label>
+                        <div class="col-sm-8 attached-file" id="attachFileArea">
+                            <ul>
+                                <li class="attached-file-list">
+                                    <a href="">첨부파일 1번.zip</a>
+                                    <span class="attached-file-remove"><i class="fa-solid fa-square-minus"></i></span>
+                                    <input type="hidden" name="attachedFile01" value="">
+                                </li>
+                                <li class="attached-file-list">
+                                    <a href="">첨부파일 2번.war</a>
+                                    <span class="attached-file-remove"><i class="fa-solid fa-square-minus"></i></span>
+                                    <input type="hidden" name="attachedFile02" value="">
+                                </li>
+                            </ul>
+                            <div class="input-group input-file-addon my-3">
+                                <input type="file" id="boardAttachFile" class="form-control"
+                                       name="boardAttachFile">
+                                <button type="button" class="btn btn-secondary">삭제</button>
+                                <button type="button" class="btn btn-secondary">추가</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <input type="submit" class="btn btn-secondary float-end col-1 mx-5" value="수정">
+            <a href="#" class="btn btn-secondary float-end col-1">취소</a>
+        </div>
+    </main>
+</div>
+<script type="text/javascript" src="js/layout.js"></script>
+</body>
+</html>
